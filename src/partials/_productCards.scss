@@ -1,0 +1,70 @@
+// .filter--items {
+//   padding: 40px 0;
+//   color: #434343;
+//   text-align: center;
+//   display: flex;
+
+//   .filter--row {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+
+//   .filter--inner {
+//     max-width: 1200px;
+//     margin: auto;
+//     overflow: hidden;
+//     padding: 0 20px;
+//   }
+
+//   .filter--Div {
+//     background: #fff;
+//     padding: 30px;
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+//     max-width: 300px;
+//     text-align: center;
+//     margin: 20px;
+//     display: none;
+//   }
+
+//   .filter--Div img {
+//     width: 100%;
+//     height: 204.75px;
+//   }
+//   .Product--name {
+//     font-size: 20px;
+//     text-transform: uppercase;
+//     margin: 20px 0;
+//   }
+
+//   .show {
+//     display: block;
+//   }
+
+//   .filter--container {
+//     margin-top: 20px;
+//     overflow: hidden;
+//   }
+// }
+
+.filter--div {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px #ccc;
+  width: 200px;
+  padding: 20px;
+
+  .Product--name {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  .Product--cost {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  .Product--desc {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}

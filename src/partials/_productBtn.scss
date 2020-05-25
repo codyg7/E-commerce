@@ -1,0 +1,31 @@
+#filter--btn {
+  .filter--spacing {
+    display: flex;
+    justify-content: center;
+  }
+  .filter--btns {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    margin: 10px;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .filter--btns:hover {
+    background-color: #c0c0c0;
+    color: black;
+  }
+
+  .filter--btns.active {
+    background-color: #c0c0c0;
+    color: black;
+  }
+
+  .filter--title {
+    padding: 25px;
+    text-align: center;
+  }
+}

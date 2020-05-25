@@ -1,0 +1,81 @@
+.byStyle {
+  .byStlye--header {
+    padding-top: 15px;
+    text-align: center;
+  }
+  .byStyle--row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .byStyle--item {
+    max-width: 200px;
+    max-height: 300px;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .byStyle--img {
+    height: 218.39px;
+    width: 218.39px;
+  }
+  .byStyle--p {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.designers {
+  .designers--h2 {
+    padding: 15px;
+    text-align: center;
+  }
+  .designers--row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .designers--img {
+    height: 153.49px;
+    width: 125.72px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.trends {
+  .trends--h2 {
+    padding: 15px;
+    text-align: center;
+  }
+  .trends--row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .trends--cards {
+    padding: 30px;
+    max-width: 30%;
+    max-height: 300px;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .trends--img {
+    width: 100%;
+    height: 30%;
+  }
+  .trends--name {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+}

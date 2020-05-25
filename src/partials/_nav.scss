@@ -1,0 +1,81 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+
+  .logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+  }
+
+  .logo--img {
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+  }
+
+  .nav--links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }
+
+  .nav--links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .nav--links li {
+    list-style: none;
+  }
+
+  .nav--burger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .nav--burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes navLinkFade {
+  //invoking animations
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  } //adding transition to links
+}
+
+//moving lines in burgers
+.toggle .nav--burger__line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .nav--burger__line2 {
+  opacity: 0;
+}
+.toggle .nav--burger__line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
