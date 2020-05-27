@@ -1,76 +1,88 @@
-[
-  {
-    "img": "../img/supremeCargo.png",
-    "productName": "Supreme Nylon Cargo Pants",
-    "productCost": "185",
-    "productDescription": "SUPREME NYLON CARGO PANTS DARK ORANGR",
-    "tag": "Bottoms"
-  },
-  {
-    "img": "",
-    "productName": "Supreme Come Des Garcons",
-    "productCost": "400",
-    "productDescription": "SUPREME NYLON CARGO PANTS DARK ORANGR",
-    "tag": "Tops"
-  },
-  {
-    "img": "",
-    "productName": "Supreme Nylon Cargo Pants",
-    "productCost": "185",
-    "productDescription": "SUPREME NYLON CARGO PANTS DARK ORANGR"
-  },
-  {
-    "img": "",
-    "productName": "Supreme Nylon Cargo Pants",
-    "productCost": "185",
-    "productDescription": "SUPREME NYLON CARGO PANTS DARK ORANGR"
-  },
-  {
-    "img": "",
-    "productName": "Supreme Nylon Cargo Pants",
-    "productCost": "185",
-    "productDescription": "SUPREME NYLON CARGO PANTS DARK ORANGR"
-  },
-  {
-    "img": "",
-    "productName": "Supreme Nylon Cargo Pants",
-    "productCost": "185",
-    "productDescription": "SUPREME NYLON CARGO PANTS DARK ORANGR"
-  },
-  {
-    "img": "",
-    "productName": "Supreme Nylon Cargo Pants",
-    "productCost": "185",
-    "productDescription": "SUPREME NYLON CARGO PANTS DARK ORANGR"
-  },
-  {
-    "img": "",
-    "productName": "Supreme Nylon Cargo Pants",
-    "productCost": "185",
-    "productDescription": "SUPREME NYLON CARGO PANTS DARK ORANGR"
-  },
-  {
-    "img": "",
-    "productName": "Supreme Nylon Cargo Pants",
-    "productCost": "185",
-    "productDescription": "SUPREME NYLON CARGO PANTS DARK ORANGR"
-  },
-  {
-    "img": "",
-    "productName": "Supreme Nylon Cargo Pants",
-    "productCost": "185",
-    "productDescription": "SUPREME NYLON CARGO PANTS DARK ORANGR"
-  },
-  {
-    "img": "",
-    "productName": "Supreme Nylon Cargo Pants",
-    "productCost": "185",
-    "productDescription": "SUPREME NYLON CARGO PANTS DARK ORANGR"
-  },
-  {
-    "img": "",
-    "productName": "Supreme Nylon Cargo Pants",
-    "productCost": "185",
-    "productDescription": "SUPREME NYLON CARGO PANTS DARK ORANGR"
-  }
-]
+{
+  "products": [
+    {
+      "img": "/img/supremeCargo.png",
+      "productName": "Supreme Nylon Cargo Pants",
+      "productCost": "185",
+      "productDescription": "SUPREME NYLON CARGO PANTS DARK ORANGR",
+      "tag": "Bottoms"
+    },
+    {
+      "img": "/img/supremeCDG.png",
+      "productName": "Supreme Come Des Garcons",
+      "productCost": "400",
+      "productDescription": "SUPREME NYLON CARGO PANTS DARK ORANGR",
+      "tag": "Tops"
+    },
+    {
+      "img": "/img/PalaceT.png",
+      "productName": "DSM X Palace Reverse Triferg",
+      "productCost": "160",
+      "productDescription": "Palce Reverse Triferg",
+      "tag": "Tops"
+    },
+    {
+      "img": "/img/GucciSweat.png",
+      "productName": "Gucci X Vintage",
+      "productCost": "280",
+      "productDescription": "Rare Vintage Gucci Diamond Big Logo Sweatshirt",
+      "tag": "Tops"
+    },
+    {
+      "img": "/img/GucciBelt.png",
+      "productName": "Gucci Monogram Belt",
+      "productCost": "220",
+      "productDescription": "Gucci Leather Monogram Belt",
+      "tag": "Accessories"
+    },
+    {
+      "img": "/img/NikeVintage.png",
+      "productName": "Vintage Nike Big Logo Windbreaker",
+      "productCost": "70",
+      "productDescription": " SVintage Nike Windbreaker with big spellout & swoosh on the back.",
+      "tag": "Outerwear"
+    },
+    {
+      "img": "/img/NorthFaceVintage.png",
+      "productName": "Vintage 90's North Face Hydrenaline Jacket",
+      "productCost": "35",
+      "productDescription": "Vintage The Northface Hydrenaline Hooded Windbreaker Light Jacket w Mesh Lining",
+      "tag": "Outerwear"
+    },
+    {
+      "img": "/img/NikeDunks.png",
+      "productName": "SB Dunk Low Strange Love",
+      "productCost": "185",
+      "productDescription": "OG SB Nike Dunk Low Strange Love",
+      "tag": "Footwear"
+    },
+    {
+      "img": "/img/Jordans.png",
+      "productName": "Air Jordan 1 High Retro OG",
+      "productCost": "405",
+      "productDescription": "Air Jordan 1 High Retro OG Satin Black Toes",
+      "tag": "Footwear"
+    },
+    {
+      "img": "/img/YohjuYamamoto.png",
+      "productName": "Yohji Yamamoto Pour Homme Runway",
+      "productCost": "2,259",
+      "productDescription": "Yohji Yamamoto Pour Homme Runway Jacket and Pants set",
+      "tag": "Tailoring"
+    },
+    {
+      "img": "/img/VintagePrada.png",
+      "productName": "Classic Slim Fit Prada Black Suit",
+      "productCost": "450",
+      "productDescription": "Classic Slim Fit Prada Black Stripped Suit",
+      "tag": "Tailoring"
+    },
+    {
+      "img": "/img/LVnecklace.png",
+      "productName": "Louis Vuitton Lock on Wheat Chain Chocker",
+      "productCost": "94",
+      "productDescription": "Authentic Vintage Louis Vuitton Solid Brass Lock attatched to a New Unbranded Gold Tone 16inch Wheat Chain",
+      "tag": "Accessories"
+    }
+  ]
+}
