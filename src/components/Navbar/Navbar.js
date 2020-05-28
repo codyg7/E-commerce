@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../Responsivenav/ResNavButton";
 
@@ -15,15 +16,21 @@ const navbar = (props) => {
         </div>
         <div>
           <ul className='nav--links'>
-            <li>
-              <a href='/'> Home </a>
-            </li>
-            <li>
-              <a href='/'> Products </a>
-            </li>
-            <li>
-              <a href='/'> Contact </a>
-            </li>
+            <Link to='/'>
+              <li>
+                <a href='/'> Home </a>
+              </li>
+            </Link>
+            <Link to='/products'>
+              <li>
+                <a href='/products'> Products </a>
+              </li>
+            </Link>
+            <Link to='/contact'>
+              <li>
+                <a href='/contact'> Contact </a>
+              </li>
+            </Link>
           </ul>
         </div>
       </nav>
