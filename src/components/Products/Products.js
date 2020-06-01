@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Productslist from "../Productslist";
+import Productslist from "./Productslist";
 import Products from "../../products/products.json";
 import Filterbtns from "../Filter/Filterbtns";
 
