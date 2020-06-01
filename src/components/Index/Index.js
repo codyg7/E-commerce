@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import { Slider } from "../Slider/Slider";
 
 export default class Index extends Component {
   render() {
     return (
       <div>
-        <h1>Index</h1>
+        <Slider />
       </div>
     );
   }
