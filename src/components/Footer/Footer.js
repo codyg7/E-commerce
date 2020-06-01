@@ -30,21 +30,21 @@ const footer = (props) => {
             href='https://www.facebook.com/'
             rel='noopener'
           >
-            <i class='fab fa-facebook-f'></i>
+            <i className='fab fa-facebook-f'></i>
           </a>
           <a
             className='footer--social-icon divider'
             href='https://www.instagram.com/'
             rel='noopener'
           >
-            <i class='fab fa-instagram'></i>
+            <i className='fab fa-instagram'></i>
           </a>
           <a
             className='footer--social-icon'
             href='https://www.linkedin.com/'
             rel='noopener'
           >
-            <i class='fab fa-linkedin-in'></i>
+            <i className='fab fa-linkedin-in'></i>
           </a>
         </div>
       </div>

@@ -3,7 +3,7 @@ import Productslist from "../Productslist";
 import Products from "../../products/products.json";
 import Filterbtns from "../Filter/Filterbtns";
 
-let currentValue = "";
+// let currentValue = "";
 
 export default class Productspage extends Component {
   constructor() {
@@ -20,6 +20,9 @@ export default class Productspage extends Component {
         return true;
       }
       if (this.state.filterValue === product.tag) {
+        return true;
+      }
+      if (this.state.filterValue === product.priceRange) {
         return true;
       }
       return false;

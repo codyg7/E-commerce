@@ -1,5 +1,5 @@
 .contact--section {
-  background: url(../img/background.jpg) no-repeat center;
+  background: url(/img/background.jpg) no-repeat center;
   background-size: cover;
   padding: 40px 0;
 
@@ -13,9 +13,9 @@
     background: black;
     margin: 40px auto;
   }
-  #error {
+  .error {
     text-align: center;
-    color: #fff;
+    color: red;
     font-size: 20px;
   }
 }

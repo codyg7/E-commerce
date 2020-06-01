@@ -5,84 +5,120 @@
       "productName": "Supreme Nylon Cargo Pants",
       "productCost": "185",
       "productDescription": "SUPREME NYLON CARGO PANTS DARK ORANGR",
-      "tag": "Bottoms"
+      "tag": "Bottoms",
+      "priceRange": "101-200"
     },
     {
       "img": "/img/supremeCDG.png",
       "productName": "Supreme Come Des Garcons",
       "productCost": "400",
       "productDescription": "SUPREME NYLON CARGO PANTS DARK ORANGR",
-      "tag": "Tops"
+      "tag": "Tops",
+      "priceRange": "400+"
     },
     {
       "img": "/img/PalaceT.png",
       "productName": "DSM X Palace Reverse Triferg",
       "productCost": "160",
       "productDescription": "Palce Reverse Triferg",
-      "tag": "Tops"
+      "tag": "Tops",
+      "priceRange": "101-200"
     },
     {
       "img": "/img/GucciSweat.png",
       "productName": "Gucci X Vintage",
       "productCost": "280",
       "productDescription": "Rare Vintage Gucci Diamond Big Logo Sweatshirt",
-      "tag": "Tops"
+      "tag": "Tops",
+      "priceRange": "201-300"
     },
     {
       "img": "/img/GucciBelt.png",
       "productName": "Gucci Monogram Belt",
       "productCost": "220",
       "productDescription": "Gucci Leather Monogram Belt",
-      "tag": "Accessories"
+      "tag": "Accessories",
+      "priceRange": "201-300"
     },
     {
       "img": "/img/NikeVintage.png",
       "productName": "Vintage Nike Big Logo Windbreaker",
       "productCost": "70",
       "productDescription": " SVintage Nike Windbreaker with big spellout & swoosh on the back.",
-      "tag": "Outerwear"
+      "tag": "Outerwear",
+      "priceRange": "0-100"
     },
     {
       "img": "/img/NorthFaceVintage.png",
       "productName": "Vintage 90's North Face Hydrenaline Jacket",
       "productCost": "35",
       "productDescription": "Vintage The Northface Hydrenaline Hooded Windbreaker Light Jacket w Mesh Lining",
-      "tag": "Outerwear"
+      "tag": "Outerwear",
+      "priceRange": "0-100"
     },
     {
       "img": "/img/NikeDunks.png",
       "productName": "SB Dunk Low Strange Love",
       "productCost": "185",
       "productDescription": "OG SB Nike Dunk Low Strange Love",
-      "tag": "Footwear"
+      "tag": "Footwear",
+      "priceRange": "101-200"
     },
     {
       "img": "/img/Jordans.png",
       "productName": "Air Jordan 1 High Retro OG",
       "productCost": "405",
       "productDescription": "Air Jordan 1 High Retro OG Satin Black Toes",
-      "tag": "Footwear"
+      "tag": "Footwear",
+      "priceRange": "400+"
     },
     {
       "img": "/img/YohjuYamamoto.png",
       "productName": "Yohji Yamamoto Pour Homme Runway",
       "productCost": "2,259",
       "productDescription": "Yohji Yamamoto Pour Homme Runway Jacket and Pants set",
-      "tag": "Tailoring"
+      "tag": "Tailoring",
+      "priceRange": "400+"
     },
     {
       "img": "/img/VintagePrada.png",
       "productName": "Classic Slim Fit Prada Black Suit",
       "productCost": "450",
       "productDescription": "Classic Slim Fit Prada Black Stripped Suit",
-      "tag": "Tailoring"
+      "tag": "Tailoring",
+      "priceRange": "400+"
     },
     {
       "img": "/img/LVnecklace.png",
       "productName": "Louis Vuitton Lock on Wheat Chain Chocker",
       "productCost": "94",
       "productDescription": "Authentic Vintage Louis Vuitton Solid Brass Lock attatched to a New Unbranded Gold Tone 16inch Wheat Chain",
-      "tag": "Accessories"
+      "tag": "Accessories",
+      "priceRange": "0-100"
+    },
+    {
+      "img": "/img/adidas.jpg",
+      "productName": "ADIDAS ORIGINALS TREFOIL TRACK PANTS",
+      "productCost": "44",
+      "productDescription": "VINTAGE ADIDAS ORIGINALS TREFOIL TRACK PANTS 90s",
+      "tag": "Bottoms",
+      "priceRange": "0-100"
+    },
+    {
+      "img": "/img/playboy.jpg",
+      "productName": "Playboy x Supreme Sweatpants",
+      "productCost": "270",
+      "productDescription": "FW15 playboy supreme sweatpants",
+      "tag": "Bottoms",
+      "priceRange": "201-300"
+    },
+    {
+      "img": "/img/Bape.jpg",
+      "productName": "BAPE Camo Shark Full Zip Hoodie",
+      "productCost": "420",
+      "productDescription": "deadstock BAPE 1ST CAMO SHARK FULL ZIP HOODIE",
+      "tag": "Outerwear",
+      "priceRange": "400+"
     }
   ]
 }
