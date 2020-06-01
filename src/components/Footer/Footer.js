@@ -2,7 +2,7 @@ import React from "react";
 
 const footer = (props) => {
   return (
-    <footer className='main--footer'>
+    <footer id='main--footer'>
       <div>
         <ul className='main--footer--footerpages'>
           <li>
@@ -28,7 +28,6 @@ const footer = (props) => {
           <a
             className='footer--social-icon'
             href='https://www.facebook.com/'
-            // target='_blank'
             rel='noopener'
           >
             <i class='fab fa-facebook-f'></i>
@@ -36,7 +35,6 @@ const footer = (props) => {
           <a
             className='footer--social-icon divider'
             href='https://www.instagram.com/'
-            // target='_blank'
             rel='noopener'
           >
             <i class='fab fa-instagram'></i>
@@ -44,16 +42,11 @@ const footer = (props) => {
           <a
             className='footer--social-icon'
             href='https://www.linkedin.com/'
-            // target='_blank'
             rel='noopener'
           >
             <i class='fab fa-linkedin-in'></i>
           </a>
         </div>
-
-        {/* <a className='footer--arrow' href='#'>
-          <i class='fas fa-arrow-up'></i>
-        </a> */}
       </div>
     </footer>
   );
