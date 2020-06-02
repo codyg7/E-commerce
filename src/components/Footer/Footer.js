@@ -1,25 +1,35 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const footer = (props) => {
   return (
     <footer id='main--footer'>
       <div>
         <ul className='main--footer--footerpages'>
-          <li>
-            <a className='footer--links' href='index.html'>
-              Home
-            </a>
-          </li>
-          <li>
-            <a className='footer--links' href='products.html'>
-              Products
-            </a>
-          </li>
-          <li>
-            <a className='footer--links' href='contact.html'>
-              Contact
-            </a>
-          </li>
+          <Link to='/'>
+            <li>
+              <a href='/' className='footer--links'>
+                {" "}
+                Home{" "}
+              </a>
+            </li>
+          </Link>
+          <Link to='/products'>
+            <li>
+              <a href='/products' className='footer--links'>
+                {" "}
+                Products{" "}
+              </a>
+            </li>
+          </Link>
+          <Link to='/contact'>
+            <li>
+              <a href='/contact' className='footer--links'>
+                {" "}
+                Contact{" "}
+              </a>
+            </li>
+          </Link>
         </ul>
         <p className='footer--copyright'>
           Ecommerce &copy; 2020, All Rights Reserved
