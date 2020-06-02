@@ -6,30 +6,24 @@ const footer = (props) => {
     <footer id='main--footer'>
       <div>
         <ul className='main--footer--footerpages'>
-          <Link to='/'>
-            <li>
-              <a href='/' className='footer--links'>
-                {" "}
-                Home{" "}
-              </a>
-            </li>
-          </Link>
-          <Link to='/products'>
-            <li>
-              <a href='/products' className='footer--links'>
-                {" "}
-                Products{" "}
-              </a>
-            </li>
-          </Link>
-          <Link to='/contact'>
-            <li>
-              <a href='/contact' className='footer--links'>
-                {" "}
-                Contact{" "}
-              </a>
-            </li>
-          </Link>
+          <li>
+            <Link to='/' className='footer--links'>
+              {" "}
+              Home{" "}
+            </Link>
+          </li>
+          <li>
+            <Link to='/products' className='footer--links'>
+              {" "}
+              Products{" "}
+            </Link>
+          </li>
+          <li>
+            <Link to='/contact' className='footer--links'>
+              {" "}
+              Contact{" "}
+            </Link>
+          </li>
         </ul>
         <p className='footer--copyright'>
           Ecommerce &copy; 2020, All Rights Reserved

@@ -12,9 +12,12 @@ const initialState = {
 export default class Contact extends Component {
   state = initialState;
 
+  // function that allows for the changes of the inputs
+  // updates the state
   handleChange = (event) => {
     const isCheckbox = event.target.type === "checkbox";
     this.setState({
+      // if it is a checkbox get checked otherwise get valued event
       [event.target.name]: isCheckbox
         ? event.target.checked
         : event.target.value,
@@ -26,32 +29,40 @@ export default class Contact extends Component {
     let emailError = "";
     let passwordError = "";
 
+    // Checking if name has been filled if not add this string to name error
     if (!this.state.name) {
       nameError = "Name cannot be blank";
     }
 
+    // Checking if email form input include and @ if not add this string to name error
     if (!this.state.email.includes("@")) {
       emailError = "invalid email";
     }
 
+    // Checking if password has been filled if not add this string to name error
     if (!this.state.password) {
       passwordError = "Password cannot be blank";
     }
 
+    // returns false if there is a value for these objects and changes the state to the variables
     if (emailError || nameError || passwordError) {
       this.setState({ emailError, nameError, passwordError });
       return false;
     }
 
+    // if all this is fine continue
     return true;
   };
 
+  // prevents form from being submitted or refreshed
   handleSubmit = (event) => {
     event.preventDefault();
+    // on submit checks if there are any errors
     const isValid = this.validate();
     if (isValid) {
       console.log(this.state);
       // clear the form
+      // sets back to the initial state when user gets all input correct
       this.setState(initialState);
     }
   };
@@ -70,6 +81,7 @@ export default class Contact extends Component {
               value={this.state.name}
               onChange={this.handleChange}
             />
+            {/* displaying error message */}
             <div className='error'>{this.state.nameError}</div>
             <input
               name='email'
