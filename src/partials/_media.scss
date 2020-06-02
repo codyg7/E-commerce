@@ -45,4 +45,11 @@
       margin: 10px;
     }
   }
+
+  #filter--btn {
+    .filter--spacing {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }
