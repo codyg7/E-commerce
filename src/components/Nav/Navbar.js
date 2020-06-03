@@ -44,6 +44,7 @@ const Navbar = () => {
           />
         </div>
         <li>
+          {/* Link is a react router attribute that replaces anchor tag */}
           <Link className='nav-links' to='/'>
             {" "}
             Home{" "}
