@@ -10,7 +10,7 @@ export default class Filterbtns extends Component {
     return (
       <div id='filter--btn'>
         <div className='filter--spacing'>
-          {/* We need to wrap the handleClick call in a function in order for it to be called correctly when elements are clicked */}
+          {/* wrapping the handleClick call in a function in order for it to be called correctly when elements are clicked */}
           <button onClick={() => this.handleClick("")} className='filter--btns'>
             Show All
           </button>

@@ -13,6 +13,7 @@ function App() {
       <div>
         <Navbar />
         <Switch>
+          {/* makes sure it filters out the other pages with / */}
           <Route path='/' exact component={Index} />
           <Route path='/products' component={Productspage} />
           <Route path='/contact' component={Contact} />
