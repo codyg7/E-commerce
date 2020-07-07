@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 const initialState = {
   name: "",
   email: "",
   password: "",
+  phonenumber: "",
+  comment: "",
   nameError: "",
   emailError: "",
   passwordError: "",
@@ -65,6 +68,25 @@ export default class Contact extends Component {
       // sets back to the initial state when user gets all input correct
       this.setState(initialState);
     }
+    const payload = {
+      name: this.state.name,
+      email: this.state.email,
+      phonenumber: this.state.phonenumber,
+      password: this.state.password,
+      comment: this.state.comment,
+    };
+
+    axios({
+      url: "/api/save",
+      method: "POST",
+      data: payload,
+    })
+      .then(() => {
+        console.log("Data has been sent to the server");
+      })
+      .catch(() => {
+        console.log("Internal server error");
+      });
   };
 
   render() {
@@ -92,9 +114,12 @@ export default class Contact extends Component {
             />
             <div className='error'>{this.state.emailError}</div>
             <input
+              name='phonenumber'
               type='tel'
               className='contact--form--txt'
               placeholder='Your Phone number'
+              value={this.state.phonenumber}
+              onChange={this.handleChange}
             />
             <input
               name='password'
@@ -105,10 +130,12 @@ export default class Contact extends Component {
             />
             <div className='error'>{this.state.passwordError}</div>
             <textarea
-              name='textarea'
+              name='comment'
               id='textarea'
               className='contact--form--txt'
               placeholder='Comments'
+              value={this.state.comment}
+              onChange={this.handleChange}
             ></textarea>
             <button type='submit' className='contact--form--btn'>
               submit
