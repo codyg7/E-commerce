@@ -8,7 +8,8 @@ const PORT = process.env.PORT || 3030;
 const routes = require("./routes/api");
 
 mongoose.connect(
-  "mongodb+srv://codyg7:Zfri11-02@cluster0.9d8iz.mongodb.net/codyg7?retryWrites=true&w=majority",
+  process.env.MONGODB_URI ||
+    "mongodb+srv://codyg7:Zfri11-02@cluster0.9d8iz.mongodb.net/codyg7?retryWrites=true&w=majority",
   {
     userNewUrlParser: true,
     useUnifiedTopology: true,
@@ -26,5 +27,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(morgan("tiny"));
 
 app.use("/api", routes);
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("build"));
+  //   uri = process.env.MONGODB_URI; // connection string for Atlas here
+}
 
 app.listen(PORT, console.log(`Server starting at ${PORT}`));
