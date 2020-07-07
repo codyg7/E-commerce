@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 const initialState = {
   name: "",
@@ -65,6 +66,25 @@ export default class Contact extends Component {
       // sets back to the initial state when user gets all input correct
       this.setState(initialState);
     }
+    const payload = {
+      name: this.state.name,
+      email: this.state.email,
+      phonenumber: this.state.phonenumber,
+      password: this.state.password,
+      body: this.state.body,
+    };
+
+    axios({
+      url: "",
+      method: "POST",
+      data: payload,
+    })
+      .then(() => {
+        console.log("Data has been sent to the server");
+      })
+      .catch(() => {
+        console.log("Internal server error");
+      });
   };
 
   render() {
@@ -95,6 +115,7 @@ export default class Contact extends Component {
               type='tel'
               className='contact--form--txt'
               placeholder='Your Phone number'
+              value={this.state.phonenumber}
             />
             <input
               name='password'
@@ -109,6 +130,7 @@ export default class Contact extends Component {
               id='textarea'
               className='contact--form--txt'
               placeholder='Comments'
+              value={this.state.body}
             ></textarea>
             <button type='submit' className='contact--form--btn'>
               submit
