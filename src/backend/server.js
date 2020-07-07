@@ -5,6 +5,7 @@ const morgan = require("morgan");
 
 const app = express();
 const PORT = process.env.PORT || 3030;
+const routes = require("./routes/api");
 
 mongoose.connect(
   "mongodb+srv://codyg7:Zfri11-02@cluster0.9d8iz.mongodb.net/codyg7?retryWrites=true&w=majority",
@@ -13,29 +14,17 @@ mongoose.connect(
     useUnifiedTopology: true,
   }
 );
-const connection = mongoose.connection;
 
-connection.once("open", function () {
-  console.log("MongoDB database connection established successfully");
+mongoose.connection.on("connected", () => {
+  console.log("Connected to database");
 });
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 // HTTP request logger
 app.use(morgan("tiny"));
 
-app.get("/api", (req, res) => {
-  const data = {
-    username: "codyg7",
-    age: "6",
-  };
-  res.json();
-});
-
-app.get("/api/name", (req, res) => {
-  const data = {
-    username: "bob",
-    age: "6",
-  };
-  res.json();
-});
+app.use("/api", routes);
 
 app.listen(PORT, console.log(`Server starting at ${PORT}`));
