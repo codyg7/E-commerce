@@ -5,6 +5,8 @@ const initialState = {
   name: "",
   email: "",
   password: "",
+  phonenumber: "",
+  comment: "",
   nameError: "",
   emailError: "",
   passwordError: "",
@@ -71,11 +73,11 @@ export default class Contact extends Component {
       email: this.state.email,
       phonenumber: this.state.phonenumber,
       password: this.state.password,
-      body: this.state.body,
+      comment: this.state.comment,
     };
 
     axios({
-      url: "",
+      url: "/api/save",
       method: "POST",
       data: payload,
     })
@@ -112,10 +114,12 @@ export default class Contact extends Component {
             />
             <div className='error'>{this.state.emailError}</div>
             <input
+              name='phonenumber'
               type='tel'
               className='contact--form--txt'
               placeholder='Your Phone number'
               value={this.state.phonenumber}
+              onChange={this.handleChange}
             />
             <input
               name='password'
@@ -126,11 +130,12 @@ export default class Contact extends Component {
             />
             <div className='error'>{this.state.passwordError}</div>
             <textarea
-              name='textarea'
+              name='comment'
               id='textarea'
               className='contact--form--txt'
               placeholder='Comments'
-              value={this.state.body}
+              value={this.state.comment}
+              onChange={this.handleChange}
             ></textarea>
             <button type='submit' className='contact--form--btn'>
               submit
