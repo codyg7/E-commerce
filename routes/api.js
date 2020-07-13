@@ -23,14 +23,12 @@ router.post("/save", (req, res) => {
 
   newContactPost.save((err) => {
     if (err) {
-      console.log(err);
-      // res.status(500).json({ msg: "Sorry, internal server error" });
+      res.status(500).json({ msg: err.message });
+    } else {
+      res.json({
+        msg: "We recieved your data",
+      });
     }
-    // } else {
-    //   res.json({
-    //     msg: "We recieved your data",
-    //   });
-    // }
   });
 });
 

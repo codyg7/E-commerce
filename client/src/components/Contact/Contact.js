@@ -84,8 +84,8 @@ export default class Contact extends Component {
       .then(() => {
         console.log("Data has been sent to the server");
       })
-      .catch(() => {
-        console.log("Internal server error");
+      .catch((error) => {
+        console.log("Internal server error", error);
       });
   };
 
