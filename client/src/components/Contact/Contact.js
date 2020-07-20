@@ -68,6 +68,7 @@ export default class Contact extends Component {
       // sets back to the initial state when user gets all input correct
       this.setState(initialState);
     }
+    // contains the data I want to send to my server
     const payload = {
       name: this.state.name,
       email: this.state.email,
@@ -77,15 +78,16 @@ export default class Contact extends Component {
     };
 
     axios({
-      url: "/api/save",
+      url: "/api/user/register", // Sends the data to this endpoint to process the data needed to
+      //   create a proxy to get both servers on the same origin
       method: "POST",
       data: payload,
     })
       .then(() => {
-        console.log("Data has been sent to the server");
+        console.log("Data has been sent to the server"); // Server was able to process the data
       })
       .catch((error) => {
-        console.log("Internal server error", error);
+        console.log("Internal server error", error); // The data was not able to reach the server log error message
       });
   };
 

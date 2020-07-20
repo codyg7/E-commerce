@@ -10,6 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 3030;
 const routes = require("./routes/api");
 
+// Mongoose connection
 mongoose.connect(process.env.MONGODB_URI || process.env.DB_CONNECT, {
   userNewUrlParser: true,
   useUnifiedTopology: true,
@@ -25,7 +26,11 @@ app.use(express.urlencoded({ extended: false }));
 // HTTP request logger
 app.use(morgan("tiny"));
 
-app.use("/api", routes);
+// Import routes
+// const authRoute = require("./routes/api");
+
+//  Routes middleware
+app.use("/api/user", routes);
 
 if (process.env.NODE_ENV == "production") {
   app.use(express.static(path.join(__dirname, "./client/build")));

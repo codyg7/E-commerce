@@ -1,43 +1,37 @@
-const express = require("express");
+const User = require("../models/User");
+const router = require("express").Router();
+const bcrypt = require("bcryptjs");
+const { registerValidation } = require("../validation");
 
-const router = express.Router();
+router.post("/register", async (req, res) => {
+  // Validating the data before makigna  user
+  const { error } = registerValidation(req.body);
+  // Parses error when doesnt hit requirement
+  if (error) {
+    return res.status(400).send(error.details[0].message);
+  }
 
-const ContactPost = require("../models/contactPost");
+  // Hash the password
+  const salt = await bcrypt.genSalt(10); // Sets complexity of the hash
+  const hashedPassword = await bcrypt.hash(req.body.password, salt);
 
-router.get("/", (req, res) => {
-  ContactPost.find({})
-    .then((data) => {
-      console.log("Data: ", data);
-      res.json(data);
-    })
-    .catch((err) => {
-      res.status(400).send(err);
-    });
-});
-
-router.post("/save", (req, res) => {
-  console.log("Body: ", req.body);
-  const data = req.body;
-
-  const newContactPost = new ContactPost(data);
-
-  newContactPost.save((err) => {
-    if (err) {
-      res.status(500).json({ msg: err.message });
-    } else {
-      res.json({
-        msg: "We recieved your data",
-      });
-    }
+  // body parser
+  const user = new User({
+    name: req.body.name,
+    email: req.body.email,
+    phonenumber: req.body.phonenumber,
+    comment: req.body.comment,
+    password: hashedPassword,
   });
-});
 
-router.get("/name", (req, res) => {
-  const data = {
-    username: "codyg7",
-    age: "6",
-  };
-  res.json(data);
+  try {
+    // Saves and posts users JSON information in postman
+    const savedUser = await user.save();
+    // only sends back user with the ID
+    res.send({ user: user._id });
+  } catch (err) {
+    res.status(400).send(err);
+  }
 });
 
 module.exports = router;
