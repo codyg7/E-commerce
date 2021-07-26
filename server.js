@@ -10,6 +10,8 @@ const app = express();
 const PORT = process.env.PORT || 3030;
 const routes = require("./routes/api");
 
+
+//restarting db
 // Mongoose connection
 mongoose.connect(process.env.MONGODB_URI || process.env.DB_CONNECT, {
   userNewUrlParser: true,
